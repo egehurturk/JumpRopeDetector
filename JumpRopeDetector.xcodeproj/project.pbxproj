@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E9D94728A54C5B00D5875E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D94628A54C5B00D5875E /* AppDelegate.swift */; };
+		00E9D94928A54C5B00D5875E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D94828A54C5B00D5875E /* SceneDelegate.swift */; };
+		00E9D94B28A54C5B00D5875E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D94A28A54C5B00D5875E /* ViewController.swift */; };
+		00E9D94E28A54C5B00D5875E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E9D94C28A54C5B00D5875E /* Main.storyboard */; };
+		00E9D95028A54C5E00D5875E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E9D94F28A54C5E00D5875E /* Assets.xcassets */; };
+		00E9D95328A54C5E00D5875E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E9D95128A54C5E00D5875E /* LaunchScreen.storyboard */; };
+		00E9D95E28A54C5E00D5875E /* JumpRopeDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D95D28A54C5E00D5875E /* JumpRopeDetectorTests.swift */; };
+		00E9D96828A54C5E00D5875E /* JumpRopeDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D96728A54C5E00D5875E /* JumpRopeDetectorUITests.swift */; };
+		00E9D96A28A54C5E00D5875E /* JumpRopeDetectorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D96928A54C5E00D5875E /* JumpRopeDetectorUITestsLaunchTests.swift */; };
+		00E9D97A28A54C7900D5875E /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D97928A54C7900D5875E /* YOLOv3.mlmodel */; };
+		00E9D97C28A54CBA00D5875E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 00E9D97B28A54CBA00D5875E /* .gitignore */; };
+		00E9D97E28A54CCD00D5875E /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D97D28A54CCD00D5875E /* VideoCapture.swift */; };
+		00E9D98028A54D1E00D5875E /* RopeDetectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9D97F28A54D1E00D5875E /* RopeDetectionController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E9D95A28A54C5E00D5875E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E9D93B28A54C5B00D5875E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E9D94228A54C5B00D5875E;
+			remoteInfo = JumpRopeDetector;
+		};
+		00E9D96428A54C5E00D5875E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E9D93B28A54C5B00D5875E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E9D94228A54C5B00D5875E;
+			remoteInfo = JumpRopeDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E9D94328A54C5B00D5875E /* JumpRopeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpRopeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E9D94628A54C5B00D5875E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00E9D94828A54C5B00D5875E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00E9D94A28A54C5B00D5875E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00E9D94D28A54C5B00D5875E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00E9D94F28A54C5E00D5875E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00E9D95228A54C5E00D5875E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00E9D95428A54C5E00D5875E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E9D95928A54C5E00D5875E /* JumpRopeDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JumpRopeDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E9D95D28A54C5E00D5875E /* JumpRopeDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpRopeDetectorTests.swift; sourceTree = "<group>"; };
+		00E9D96328A54C5E00D5875E /* JumpRopeDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JumpRopeDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E9D96728A54C5E00D5875E /* JumpRopeDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpRopeDetectorUITests.swift; sourceTree = "<group>"; };
+		00E9D96928A54C5E00D5875E /* JumpRopeDetectorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpRopeDetectorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00E9D97928A54C7900D5875E /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
+		00E9D97B28A54CBA00D5875E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		00E9D97D28A54CCD00D5875E /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		00E9D97F28A54D1E00D5875E /* RopeDetectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopeDetectionController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E9D94028A54C5B00D5875E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E9D95628A54C5E00D5875E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E9D96028A54C5E00D5875E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E9D93A28A54C5B00D5875E = {
+			isa = PBXGroup;
+			children = (
+				00E9D97B28A54CBA00D5875E /* .gitignore */,
+				00E9D94528A54C5B00D5875E /* JumpRopeDetector */,
+				00E9D95C28A54C5E00D5875E /* JumpRopeDetectorTests */,
+				00E9D96628A54C5E00D5875E /* JumpRopeDetectorUITests */,
+				00E9D94428A54C5B00D5875E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00E9D94428A54C5B00D5875E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00E9D94328A54C5B00D5875E /* JumpRopeDetector.app */,
+				00E9D95928A54C5E00D5875E /* JumpRopeDetectorTests.xctest */,
+				00E9D96328A54C5E00D5875E /* JumpRopeDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E9D94528A54C5B00D5875E /* JumpRopeDetector */ = {
+			isa = PBXGroup;
+			children = (
+				00E9D97828A54C6D00D5875E /* Controllers */,
+				00E9D97728A54C6900D5875E /* Views */,
+				00E9D97628A54C6500D5875E /* Models */,
+				00E9D94628A54C5B00D5875E /* AppDelegate.swift */,
+				00E9D94828A54C5B00D5875E /* SceneDelegate.swift */,
+				00E9D94F28A54C5E00D5875E /* Assets.xcassets */,
+				00E9D95428A54C5E00D5875E /* Info.plist */,
+			);
+			path = JumpRopeDetector;
+			sourceTree = "<group>";
+		};
+		00E9D95C28A54C5E00D5875E /* JumpRopeDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E9D95D28A54C5E00D5875E /* JumpRopeDetectorTests.swift */,
+			);
+			path = JumpRopeDetectorTests;
+			sourceTree = "<group>";
+		};
+		00E9D96628A54C5E00D5875E /* JumpRopeDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00E9D96728A54C5E00D5875E /* JumpRopeDetectorUITests.swift */,
+				00E9D96928A54C5E00D5875E /* JumpRopeDetectorUITestsLaunchTests.swift */,
+			);
+			path = JumpRopeDetectorUITests;
+			sourceTree = "<group>";
+		};
+		00E9D97628A54C6500D5875E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00E9D97928A54C7900D5875E /* YOLOv3.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00E9D97728A54C6900D5875E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00E9D94C28A54C5B00D5875E /* Main.storyboard */,
+				00E9D95128A54C5E00D5875E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00E9D97828A54C6D00D5875E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00E9D94A28A54C5B00D5875E /* ViewController.swift */,
+				00E9D97D28A54CCD00D5875E /* VideoCapture.swift */,
+				00E9D97F28A54D1E00D5875E /* RopeDetectionController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E9D94228A54C5B00D5875E /* JumpRopeDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E9D96D28A54C5E00D5875E /* Build configuration list for PBXNativeTarget "JumpRopeDetector" */;
+			buildPhases = (
+				00E9D93F28A54C5B00D5875E /* Sources */,
+				00E9D94028A54C5B00D5875E /* Frameworks */,
+				00E9D94128A54C5B00D5875E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JumpRopeDetector;
+			productName = JumpRopeDetector;
+			productReference = 00E9D94328A54C5B00D5875E /* JumpRopeDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00E9D95828A54C5E00D5875E /* JumpRopeDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E9D97028A54C5E00D5875E /* Build configuration list for PBXNativeTarget "JumpRopeDetectorTests" */;
+			buildPhases = (
+				00E9D95528A54C5E00D5875E /* Sources */,
+				00E9D95628A54C5E00D5875E /* Frameworks */,
+				00E9D95728A54C5E00D5875E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E9D95B28A54C5E00D5875E /* PBXTargetDependency */,
+			);
+			name = JumpRopeDetectorTests;
+			productName = JumpRopeDetectorTests;
+			productReference = 00E9D95928A54C5E00D5875E /* JumpRopeDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00E9D96228A54C5E00D5875E /* JumpRopeDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E9D97328A54C5E00D5875E /* Build configuration list for PBXNativeTarget "JumpRopeDetectorUITests" */;
+			buildPhases = (
+				00E9D95F28A54C5E00D5875E /* Sources */,
+				00E9D96028A54C5E00D5875E /* Frameworks */,
+				00E9D96128A54C5E00D5875E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E9D96528A54C5E00D5875E /* PBXTargetDependency */,
+			);
+			name = JumpRopeDetectorUITests;
+			productName = JumpRopeDetectorUITests;
+			productReference = 00E9D96328A54C5E00D5875E /* JumpRopeDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00E9D93B28A54C5B00D5875E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					00E9D94228A54C5B00D5875E = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					00E9D95828A54C5E00D5875E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 00E9D94228A54C5B00D5875E;
+					};
+					00E9D96228A54C5E00D5875E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 00E9D94228A54C5B00D5875E;
+					};
+				};
+			};
+			buildConfigurationList = 00E9D93E28A54C5B00D5875E /* Build configuration list for PBXProject "JumpRopeDetector" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00E9D93A28A54C5B00D5875E;
+			productRefGroup = 00E9D94428A54C5B00D5875E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00E9D94228A54C5B00D5875E /* JumpRopeDetector */,
+				00E9D95828A54C5E00D5875E /* JumpRopeDetectorTests */,
+				00E9D96228A54C5E00D5875E /* JumpRopeDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E9D94128A54C5B00D5875E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E9D97C28A54CBA00D5875E /* .gitignore in Resources */,
+				00E9D95328A54C5E00D5875E /* LaunchScreen.storyboard in Resources */,
+				00E9D95028A54C5E00D5875E /* Assets.xcassets in Resources */,
+				00E9D94E28A54C5B00D5875E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E9D95728A54C5E00D5875E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E9D96128A54C5E00D5875E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E9D93F28A54C5B00D5875E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E9D94B28A54C5B00D5875E /* ViewController.swift in Sources */,
+				00E9D97E28A54CCD00D5875E /* VideoCapture.swift in Sources */,
+				00E9D94728A54C5B00D5875E /* AppDelegate.swift in Sources */,
+				00E9D98028A54D1E00D5875E /* RopeDetectionController.swift in Sources */,
+				00E9D97A28A54C7900D5875E /* YOLOv3.mlmodel in Sources */,
+				00E9D94928A54C5B00D5875E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E9D95528A54C5E00D5875E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E9D95E28A54C5E00D5875E /* JumpRopeDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E9D95F28A54C5E00D5875E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E9D96A28A54C5E00D5875E /* JumpRopeDetectorUITestsLaunchTests.swift in Sources */,
+				00E9D96828A54C5E00D5875E /* JumpRopeDetectorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E9D95B28A54C5E00D5875E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E9D94228A54C5B00D5875E /* JumpRopeDetector */;
+			targetProxy = 00E9D95A28A54C5E00D5875E /* PBXContainerItemProxy */;
+		};
+		00E9D96528A54C5E00D5875E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E9D94228A54C5B00D5875E /* JumpRopeDetector */;
+			targetProxy = 00E9D96428A54C5E00D5875E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00E9D94C28A54C5B00D5875E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00E9D94D28A54C5B00D5875E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00E9D95128A54C5E00D5875E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00E9D95228A54C5E00D5875E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E9D96B28A54C5E00D5875E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00E9D96C28A54C5E00D5875E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00E9D96E28A54C5E00D5875E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKYHFUB552;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JumpRopeDetector/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egehurturk.JumpRopeDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00E9D96F28A54C5E00D5875E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKYHFUB552;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JumpRopeDetector/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egehurturk.JumpRopeDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00E9D97128A54C5E00D5875E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKYHFUB552;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egehurturk.JumpRopeDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JumpRopeDetector.app/JumpRopeDetector";
+			};
+			name = Debug;
+		};
+		00E9D97228A54C5E00D5875E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKYHFUB552;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egehurturk.JumpRopeDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JumpRopeDetector.app/JumpRopeDetector";
+			};
+			name = Release;
+		};
+		00E9D97428A54C5E00D5875E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKYHFUB552;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egehurturk.JumpRopeDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JumpRopeDetector;
+			};
+			name = Debug;
+		};
+		00E9D97528A54C5E00D5875E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HKYHFUB552;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egehurturk.JumpRopeDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JumpRopeDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E9D93E28A54C5B00D5875E /* Build configuration list for PBXProject "JumpRopeDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E9D96B28A54C5E00D5875E /* Debug */,
+				00E9D96C28A54C5E00D5875E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E9D96D28A54C5E00D5875E /* Build configuration list for PBXNativeTarget "JumpRopeDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E9D96E28A54C5E00D5875E /* Debug */,
+				00E9D96F28A54C5E00D5875E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E9D97028A54C5E00D5875E /* Build configuration list for PBXNativeTarget "JumpRopeDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E9D97128A54C5E00D5875E /* Debug */,
+				00E9D97228A54C5E00D5875E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E9D97328A54C5E00D5875E /* Build configuration list for PBXNativeTarget "JumpRopeDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E9D97428A54C5E00D5875E /* Debug */,
+				00E9D97528A54C5E00D5875E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00E9D93B28A54C5B00D5875E /* Project object */;
+}

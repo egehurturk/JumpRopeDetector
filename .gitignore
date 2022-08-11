@@ -1,0 +1,5 @@
+JumpRopeDetector/Models/*.mlmodel
+JumpRopeDetector/Models/YOLOv3.mlmodel
+JumpRopeDetectorTests/*
+JumpRopeDetectorUITests/*
+
